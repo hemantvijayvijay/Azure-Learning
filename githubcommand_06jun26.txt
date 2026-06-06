@@ -7,6 +7,8 @@ git config: Git ko bataya ki aapka naam aur email kya hai.
 
 git add:  (git add .\githubcommand_06jun26.txt ) (git add )  File ko tracking list (staging area) me daala.
 
+git branch -M main : Branch ka naam main set karne ke liye
+
 git branch :  crurrent branch Dekhne ke liye
 
 git commit: (git commit -m "this is my second txt file") Badlavon ko ek message ke sath lock kiya.

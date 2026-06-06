@@ -26,7 +26,7 @@ Jaise hi repo banegi, GitHub aapko ek page dikhayega jisme kuch commands likhi h
 
 Bash
 # 1. Branch ka naam main set karne ke liye
-
+git branch -M main   
 
 
 # 2. Apne local folder ko GitHub ke online folder se jodne ke liye (Apna URL copy karna)
