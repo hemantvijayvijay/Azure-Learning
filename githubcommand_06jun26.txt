@@ -1,0 +1,14 @@
+Aaj Aapne Kya-Kya Seekha? (Quick Revision)
+
+
+git init: Folder ko Git repository banaya.
+
+git config: Git ko bataya ki aapka naam aur email kya hai.
+
+git add: File ko tracking list (staging area) me daala.
+
+git commit: Badlavon ko ek message ke sath lock kiya.
+
+git remote set-url: Apne system ko internet (GitHub) ke link se joda.
+
+git push: Apne local backup ko online server par bhej diya.
