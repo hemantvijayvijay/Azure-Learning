@@ -1,0 +1,55 @@
+🚀 Let's Go to the Azure Portal! (Scenario 1)
+Maza toh tab aayega jab hum is Git ki speed ko Azure Cloud ke sath jodenge. Chaliye shuru karte hain Scenario 1: Same Tenant - Same Subscription - Same Region.
+
+Hamara goal hai: Do alag VNets banana, unke beech Peering karna, aur connectivity test karna.
+
+🛠️ Step 1: Create Two VNets (Do Networks Banayein)
+Apne Azure Portal (portal.azure.com) par login kariye aur ye do VNets banayein. IP ranges ka dhyan rakhna, overlap nahi hona chahiye!
+
+VNet 1: (Name: Hub-VNet)
+Resource Group: Ek naya banayein, naam rakhein RG-Networking-Lab.
+
+Region: Select karein East US.
+
+IP Address Space (CIDR): 10.1.0.0/16
+
+Subnet Name: Subnet-A (Range: 10.1.1.0/24)
+
+VNet 2: (Name: Spoke-VNet)
+Resource Group: Same select karein RG-Networking-Lab.
+
+Region: Same select karein East US (Kyunki hum same region test kar rahe hain).
+
+IP Address Space (CIDR): 10.2.0.0/16 (Dekhiye, yeh 10.1 se alag hai, yani non-overlapping).
+
+Subnet Name: Subnet-B (Range: 10.2.1.0/24)
+
+🛠️ Step 2: Deploy Virtual Machines (VMs)
+Dono networks me ek-ek choti test machine (VM) banayein taaki connectivity check kar sakein.
+
+VM-1 (Hub-VM): Ise Hub-VNet ke Subnet-A me deploy karein. Size me sabse sasta wala (B1s ya B1ls) select karna taaki free credits bachein.
+
+VM-2 (Spoke-VM): Ise Spoke-VNet ke Subnet-B me deploy karein. Same sasta size.
+
+(Pro-Tip: Dono VMs ka username aur password same rakhna taaki yaad rakhne me aasani ho).
+
+🛠️ Step 3: Enable VNet Peering
+Jab dono VMs ready (Running state me) ho jayein:
+
+Portal me Hub-VNet par jaiye.
+
+Left side menu me Settings ke andar Peerings par click kariye.
+
++ Add button par click kariye.
+
+Ek form khulega, use is tarah bhariye:
+
+Peering link name (This VNet): Hub-to-Spoke
+
+Peering link name (Remote VNet): Spoke-to-Hub
+
+Virtual Network: Dropdown se Spoke-VNet select kar lijiye.
+
+Baaki saari settings ko default (Allow) rehne dein aur neeche Add par click kar dein.
+
+Azure dono taraf se automatic link status "Connected" kar dega (Agle 30 seconds me).
