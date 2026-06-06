@@ -5,10 +5,18 @@ git init: Folder ko Git repository banaya.
 
 git config: Git ko bataya ki aapka naam aur email kya hai.
 
-git add: File ko tracking list (staging area) me daala.
+git add:  (git add .\githubcommand_06jun26.txt ) (git add )  File ko tracking list (staging area) me daala.
 
-git commit: Badlavon ko ek message ke sath lock kiya.
+git branch :  crurrent branch Dekhne ke liye
 
-git remote set-url: Apne system ko internet (GitHub) ke link se joda.
+git commit: (git commit -m "this is my second txt file") Badlavon ko ek message ke sath lock kiya.
 
-git push: Apne local backup ko online server par bhej diya.
+git remote set-url: (git remote add origin <URL> ) Apne system ko internet (GitHub) ke link se joda.
+
+git push:  (git push -u origin main)  Apne local backup ko online server par bhej diya.
+
+
+Most importent TIP - 
+
+'M' ka matlab hai Modified blue color (Badla hua).
+Green (Hara) Color aur 'U': Iska matlab hota hai Untracked (Nayi file).
