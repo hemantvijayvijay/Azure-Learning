@@ -4,10 +4,34 @@ git init (Apne computer me naya project folder shuru karna)
 
 git clone (GitHub se koi bani-banai file apne laptop par lana)
 
-git add . (Apni files ko save karne ke liye taiyar karna)
+git add . (Apni files ko save karne ke liye taiyar karna)  (Ya fir saari files ke liye git add . likh sakte hain)
 
 git commit -m "Mera pehla change" (Badlavon ko ek naam dekar lock karna)
 
 git push (Apne laptop ka sara kaam internet par GitHub par upload kar dena)
 
 
+--------------------------------------------------------------------------------------------------------------
+
+Step 2 - 
+git config --global user.name "Hemant Vijay"
+git config --global user.email "hemantvijay.vijay@gmail.com"
+
+-------------------------------------------------------------------------------------------------------------------
+
+Step - 3 
+
+Jaise hi repo banegi, GitHub aapko ek page dikhayega jisme kuch commands likhi hongi.
+ Aapko unme se "…or push an existing repository from the command line" waale section ki commands ko ek-ek karke apne terminal me chalan hai:
+
+Bash
+# 1. Branch ka naam main set karne ke liye
+
+
+
+# 2. Apne local folder ko GitHub ke online folder se jodne ke liye (Apna URL copy karna)
+git remote add origin https://github.com/hemant vijay/Azure-Learning.git
+
+# 3. File ko internet par bhejne ke liye
+git push -u origin main
+Note: Jab aap pehli baar git push karenge, toh ek chota sa pop-up window khulega jo aapse GitHub login karne ko kahega (Sign in with your browser). Bas allow kar dena.git push -u origin main
